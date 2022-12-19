@@ -1,7 +1,18 @@
 version: '3.7'
 services:
-  web:
-    build: .
+  frontend:
+    build: ./frontend/Dockerfile
+    container_name: "nodejs"
+#    volumes:
+#     - "./frontend/ujiyamada_project_2022/public:/var/www/html"
+    privileged: true
+    ports:
+      - "4000:4001"
+    depends_on:
+      - apache
+
+  backend:
+    build: ./backend/Dockerfile
     container_name: "apache"
     volumes:
       - "./html/:/var/www/html"
