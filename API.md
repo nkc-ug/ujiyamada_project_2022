@@ -11,7 +11,6 @@ GET /api/calender/{area_id}/{month}
 | ------- | ---- | -------------- |
 | area_id | int  | 表示する地区のID |
 | month   | int  | 表示する月　　   |
-|
 
 ### Res
 #### 成功時
@@ -24,7 +23,6 @@ GET /api/calender/{area_id}/{month}
 | day_id  | int    | カレンダー中の位置     |
 | holiday | string | 祝日の名称           |
 | item_id | int[]  | その日捨てる種類の配列 |
-|
 
 ```javascript
 [
@@ -55,7 +53,6 @@ GET /api/divide/{item_name}
 | param     | type    | description  |
 | --------- | ------- | ------------ |
 | item_name | string  | 検索する文字列 |
-|
 
 ### Res
 #### 成功時
@@ -66,7 +63,6 @@ GET /api/divide/{item_name}
 | param    | type      | description  |
 | -------- | --------- | ------------ |
 | item_list | string[]  | 選択候補の配列 |
-|
 
 ```javascript
 [
@@ -90,7 +86,6 @@ GET /api/divide/item/{item_name}
 | param     | type    | description       |
 | --------- | ------- | ----------------- |
 | item_name | string  | 詳細を取得する物品名 |
-|
 
 ### Res
 #### 成功時
@@ -102,7 +97,6 @@ GET /api/divide/item/{item_name}
 | ----------- | ------- | ------------ |
 | divide      | string  | 分類        　|
 | description | string  | 注意点        |
-|
 
 ```javascript
 {
