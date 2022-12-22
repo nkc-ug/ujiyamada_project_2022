@@ -7,10 +7,10 @@
 GET /api/calender/{area_id}/{month}
 ```
 
-| param   | type | description    |
-| ------- | ---- | -------------- |
-| area_id | int  | 表示する地区のID |
-| month   | int  | 表示する月　　   |
+| param     | type    | description    |
+| --------- | ------- | -------------- |
+| area_name | string  | 表示する地区名  |
+| month     | int     | 表示する月　　  |
 
 ### Res
 #### 成功時
@@ -18,18 +18,18 @@ GET /api/calender/{area_id}/{month}
 200 OK
 ```
 
-| param   | type   | description         |
-| ------- | ------ | ------------------- |
-| day_id  | int    | カレンダー中の位置     |
-| holiday | string | 祝日の名称           |
-| item_id | int[]  | その日捨てる種類の配列 |
+| param   | type    | description           |
+| ------- | ------- | --------------------- |
+| day_id  | int     | カレンダー中の位置    |
+| holiday | boolean | 祝日の有無            |
+| item_id | int[]   | その日捨てる種類の配列 |
 
 ```javascript
 [
     {
         
         "day_id": int,
-        "holiday": string,
+        "holiday": boolean,
         "item_id":[
             int
         ]
