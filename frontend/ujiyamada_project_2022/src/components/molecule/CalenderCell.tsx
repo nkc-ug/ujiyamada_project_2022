@@ -1,11 +1,19 @@
 import { Typography } from "@mui/material";
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { Box } from "@mui/system";
 
-const CalenderCell:React.FC = () => {
+type PropsType = {
+    day_id:number,
+    day:number | null,
+    holiday:boolean,
+    item_id:[number]
+};
+
+const CalenderCell:React.FC<PropsType> = (props) => {
+    const {day} = props;
     return(
         <Box border='solid 0.5px rgba(0,0,0,0.5)' bgcolor='white' height='80px' width='60px'>
-            <Typography textAlign='left' sx={{pl:0.8}}>{CalenderData[0].day}</Typography>
-            {CalenderData[0].classification.map((day,classfication) => {return(<Box key={day} sx={{mx:'auto',mb:0.3}} height='10px' width='45px' bgcolor='red'></Box>)})}
+            <Typography textAlign='left' sx={{pl:0.8}}>{day}</Typography>
         </Box>
     )
 }
@@ -16,7 +24,7 @@ const CalenderData = [
     {
         day:1,
         classification:[
-            // 'error.main',
+            'error.main',
         ]
     },
     {
