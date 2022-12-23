@@ -13,7 +13,7 @@ GET /api/calender/{area_name}/{month}
 | param   | type    | description    |
 | ------- | ------- | -------------- |
 | area_name | string  | 表示する地名     |
-| month   | int     | 表示する月　　   |
+| month   | int or null     | 表示する月　　   |
 
 ### Res
 #### 成功時
