@@ -1,0 +1,462 @@
+{
+    "大湊12":[
+        {
+            "day_id": 1,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 2,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 3,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 4,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 5,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 6,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 7,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 8,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 9,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 10,
+            "holiday": false,
+            "item_id":[
+                2,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "day_id": 11,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 12,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 13,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 14,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 15,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 16,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 17,
+            "holiday": false,
+            "item_id":[
+                1,
+                3,
+                6
+            ]
+        },
+        {
+            "day_id": 18,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 19,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 20,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 21,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 22,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 23,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 24,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 25,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 26,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 27,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 28,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 29,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 30,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 31,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 32,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 33,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 34,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 35,
+            "holiday": false,
+            "item_id":[
+            ]
+        }
+    ],
+    "大湊1":[
+        {
+            "day_id": 1,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 2,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 3,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 4,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 5,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 6,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 7,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 8,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 9,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 10,
+            "holiday": false,
+            "item_id":[
+                2,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "day_id": 11,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 12,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 13,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 14,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 15,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 16,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 17,
+            "holiday": false,
+            "item_id":[
+                1,
+                3,
+                6
+            ]
+        },
+        {
+            "day_id": 18,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 19,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 20,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 21,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 22,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 23,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 24,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 25,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 26,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 27,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 28,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 29,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 30,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 31,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 32,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 33,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 34,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 35,
+            "holiday": false,
+            "item_id":[
+            ]
+        }
+    ]
+} 
