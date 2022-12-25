@@ -523,7 +523,7 @@
         },
         {
             "day_id": 35,
-            "day": 31,
+            "day": null,
             "holiday": false,
             "item_id":[
             ]
@@ -1031,28 +1031,28 @@
         },
         {
             "day_id": 32,
-            "day": 32,
+            "day": null,
             "holiday": false,
             "item_id":[
             ]
         },
         {
             "day_id": 33,
-            "day": 33,
+            "day": null,
             "holiday": false,
             "item_id":[
             ]
         },
         {
             "day_id": 34,
-            "day": 34,
+            "day": null,
             "holiday": false,
             "item_id":[
             ]
         },
         {
             "day_id": 35,
-            "day": 35,
+            "day": null,
             "holiday": false,
             "item_id":[
             ]

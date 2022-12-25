@@ -10,7 +10,7 @@ const MainLayout: React.FC<LayoutProps> = (props) => {
     return(
         <Box sx={{bgcolor:'secondary.main'}}>
             <MainAppBar/>
-            <Box sx={{m:1}} >{props.children}</Box>
+            <Box>{props.children}</Box>
         </Box>
         
     )
