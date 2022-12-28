@@ -1,6 +1,5 @@
-import { Typography } from "@mui/material";
-import { Box } from "@mui/system";
 import { createContext, useState } from "react";
+import DivideDisplay from "./divideDisplay";
 import ItemAutocomplete from "./ItemAutocomplete";
 
 type StateContextType = {
@@ -17,9 +16,7 @@ const ModalItem = () => {
     return(
         <ItemContext.Provider value={{state:selectItem,setState:setSelectItem}}>
             <ItemAutocomplete/>
-            <Box sx={{ height:400, mt:3, border:'solid 0.5px', borderRadius:3}}>
-                <Typography sx={{p:2}} variant="subtitle1">{selectItem}</Typography>
-            </Box>
+            <DivideDisplay/>
         </ItemContext.Provider>
     )
 }
