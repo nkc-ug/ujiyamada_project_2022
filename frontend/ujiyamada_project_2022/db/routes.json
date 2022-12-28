@@ -8,5 +8,7 @@
     "/api/divide":"/divide",
     "/api/divide/a":"/a",
     "/api/divide/ai":"/ai",
-    "/api/divide/air":"/air"
+    "/api/divide/air":"/air",
+
+    "/api/divide/item/%E8%8A%B1%E7%93%B6":"/kabin"
 }
