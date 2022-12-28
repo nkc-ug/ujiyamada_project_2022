@@ -8,11 +8,12 @@ const ItemAutocomplete: React.FC = () => {
     const [itemList, setItemList] = useState<string[]>([]);
     const [inputText, setInputText] = useState<string>("");
 
+    // 2回目以降のstateへの配列のセットが行えないため一旦空配列
     useEffect(()=>{
         axios.get(`api/divide/${inputText}`).then((res:any) =>{
             setItemList([...res.data]);
         })
-    },[inputText])
+    },[])
 
     return(
         <Autocomplete
@@ -23,7 +24,7 @@ const ItemAutocomplete: React.FC = () => {
             onInputChange={(e,v) => {setInputText(v)}}
 
             disablePortal
-            id="selectarea"
+            id="selectArea"
             options={itemList}
             sx={{minWidth:180, mx:'auto', bgcolor:'white', borderRadius:1}}
             renderInput={(params) => <TextField {...params} label={'分別検索'}/>}
