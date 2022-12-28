@@ -4,11 +4,12 @@
 - TypeSccript
 - axios
 - react-router-dom
+- moment （年月欄管理）
 
 ## 画面構成（SPA）
-- topPage - leftDrawer - searchModal
+- HomePage - leftDrawer - searchModal
 
-### topPage
+### HomePage
 - ハンバーガリスト → leftDrawerMenu
 - 地区選択ドロップダウン
 - 月選択ボタン

@@ -1,0 +1,1106 @@
+{
+    "oominato12":[
+        {
+            "day_id": 1,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 2,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 3,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 4,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 5,
+            "day": 1,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 6,
+            "day": 2,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 7,
+            "day": 3,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 8,
+            "day": 4,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 9,
+            "day": 5,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 10,
+            "day": 6,
+            "holiday": false,
+            "item_id":[
+                2,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "day_id": 11,
+            "day": 7,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 12,
+            "day": 8,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 13,
+            "day": 9,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 14,
+            "day": 10,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 15,
+            "day": 11,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 16,
+            "day": 12,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 17,
+            "day": 13,
+            "holiday": false,
+            "item_id":[
+                1,
+                3,
+                6
+            ]
+        },
+        {
+            "day_id": 18,
+            "day": 14,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 19,
+            "day": 15,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 20,
+            "day": 16,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 21,
+            "day": 17,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 22,
+            "day": 18,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 23,
+            "day": 19,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 24,
+            "day": 20,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 25,
+            "day": 21,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 26,
+            "day": 22,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 27,
+            "day": 23,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 28,
+            "day": 24,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 29,
+            "day": 25,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 30,
+            "day": 26,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 31,
+            "day": 27,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 32,
+            "day": 28,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 33,
+            "day": 29,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 34,
+            "day": 30,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 35,
+            "day": 31,
+            "holiday": false,
+            "item_id":[
+            ]
+        }
+    ],
+    "oominato1":[
+        {
+            "day_id": 1,
+            "day": 1,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 2,
+            "day": 2,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 3,
+            "day": 3,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 4,
+            "day": 4,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 5,
+            "day": 5,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 6,
+            "day": 6,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 7,
+            "day": 7,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 8,
+            "day": 8,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 9,
+            "day": 9,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 10,
+            "day": 10,
+            "holiday": false,
+            "item_id":[
+                2,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "day_id": 11,
+            "day": 11,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 12,
+            "day": 12,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 13,
+            "day": 13,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 14,
+            "day": 14,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 15,
+            "day": 15,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 16,
+            "day": 16,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 17,
+            "day": 17,
+            "holiday": false,
+            "item_id":[
+                1,
+                3,
+                6
+            ]
+        },
+        {
+            "day_id": 18,
+            "day": 18,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 19,
+            "day": 19,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 20,
+            "day": 20,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 21,
+            "day": 21,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 22,
+            "day": 22,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 23,
+            "day": 23,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 24,
+            "day": 24,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 25,
+            "day": 25,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 26,
+            "day": 26,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 27,
+            "day": 27,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 28,
+            "day": 28,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 29,
+            "day": 29,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 30,
+            "day": 30,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 31,
+            "day": 31,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 32,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 33,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 34,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 35,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        }
+    ],
+    "obata12":[
+        {
+            "day_id": 1,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 2,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 3,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 4,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 5,
+            "day": 1,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 6,
+            "day": 2,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 7,
+            "day": 3,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 8,
+            "day": 4,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 9,
+            "day": 5,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 10,
+            "day": 6,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 11,
+            "day": 7,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 12,
+            "day": 8,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 13,
+            "day": 9,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 14,
+            "day": 10,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 15,
+            "day": 11,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 16,
+            "day": 12,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 17,
+            "day": 13,
+            "holiday": false,
+            "item_id":[
+                3
+            ]
+        },
+        {
+            "day_id": 18,
+            "day": 14,
+            "holiday": false,
+            "item_id":[
+                1,
+                7
+            ]
+        },
+        {
+            "day_id": 19,
+            "day": 15,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 20,
+            "day": 16,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 21,
+            "day": 17,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 22,
+            "day": 18,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 23,
+            "day": 19,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 24,
+            "day": 20,
+            "holiday": false,
+            "item_id":[
+                5
+            ]
+        },
+        {
+            "day_id": 25,
+            "day": 21,
+            "holiday": false,
+            "item_id":[
+                2
+            ]
+        },
+        {
+            "day_id": 26,
+            "day": 22,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 27,
+            "day": 23,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 28,
+            "day": 24,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 29,
+            "day": 25,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 30,
+            "day": 26,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 31,
+            "day": 27,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 32,
+            "day": 28,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 33,
+            "day": 29,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 34,
+            "day": 30,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 35,
+            "day": 31,
+            "holiday": false,
+            "item_id":[
+            ]
+        }
+    ],
+    "obata1":[
+        {
+            "day_id": 1,
+            "day": 1,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 2,
+            "day": 2,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 3,
+            "day": 3,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 4,
+            "day": 4,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 5,
+            "day": 5,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 6,
+            "day": 6,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 7,
+            "day": 7,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 8,
+            "day": 8,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 9,
+            "day": 9,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 10,
+            "day": 10,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 11,
+            "day": 11,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 12,
+            "day": 12,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 13,
+            "day": 13,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 14,
+            "day": 14,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 15,
+            "day": 15,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 16,
+            "day": 16,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 17,
+            "day": 17,
+            "holiday": false,
+            "item_id":[
+                3
+            ]
+        },
+        {
+            "day_id": 18,
+            "day": 18,
+            "holiday": false,
+            "item_id":[
+                1,
+                7
+            ]
+        },
+        {
+            "day_id": 19,
+            "day": 19,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 20,
+            "day": 20,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 21,
+            "day": 21,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 22,
+            "day": 22,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 23,
+            "day": 23,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 24,
+            "day": 24,
+            "holiday": false,
+            "item_id":[
+                5
+            ]
+        },
+        {
+            "day_id": 25,
+            "day": 25,
+            "holiday": false,
+            "item_id":[
+                2
+            ]
+        },
+        {
+            "day_id": 26,
+            "day": 26,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 27,
+            "day": 27,
+            "holiday": false,
+            "item_id":[
+                4
+            ]
+        },
+        {
+            "day_id": 28,
+            "day": 28,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 29,
+            "day": 29,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 30,
+            "day": 30,
+            "holiday": false,
+            "item_id":[
+                6
+            ]
+        },
+        {
+            "day_id": 31,
+            "day": 31,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 32,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 33,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 34,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        },
+        {
+            "day_id": 35,
+            "day": null,
+            "holiday": false,
+            "item_id":[
+            ]
+        }
+    ],
+
+    "null":[
+        "IH調理器",
+        "絵画",
+        "懐中電灯",
+        "金槌",
+        "花瓶",
+        "アイロン",
+        "雨どい"
+    ],
+    "divide":[
+        "IH調理器",
+        "絵画",
+        "懐中電灯",
+        "金槌",
+        "花瓶",
+        "アイロン",
+        "雨どい"
+    ],
+    "a":[
+        "IH調理器",
+        "アイシャドウチップ",
+        "ICレコーダー",
+        "アイスクラッシャー",
+        "アイスクリームの容器",
+        "アイロン",
+
+        "アクリルケース",
+        "アクリル製・プラスチック製の板",
+
+        "雨合羽",
+        "雨戸",
+        "雨どい"
+    ],
+    "ai":[
+        "IH調理器",
+        "アイシャドウチップ",
+        "ICレコーダー",
+        "アイスクラッシャー",
+        "アイスクリームの容器",
+        "アイロン"
+    ],
+    "air":[
+        "アイロン"
+    ]
+} 

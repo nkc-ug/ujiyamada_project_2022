@@ -2,15 +2,18 @@
 
 # カレンダー情報取得 API
 
+[※item_idとitem_nameの対応表](./item.md)
+
+
 ### Req
 ```
-GET /api/calender/{area_id}/{month}
+GET /api/calender/{area_name}/{month}
 ```
 
-| param   | type | description    |
-| ------- | ---- | -------------- |
-| area_id | int  | 表示する地区のID |
-| month   | int  | 表示する月　　   |
+| param   | type    | description    |
+| ------- | ------- | -------------- |
+| area_name | string  | 表示する地名     |
+| month   | int or null     | 表示する月　　   |
 
 ### Res
 #### 成功時
@@ -21,15 +24,17 @@ GET /api/calender/{area_id}/{month}
 | param   | type   | description         |
 | ------- | ------ | ------------------- |
 | day_id  | int    | カレンダー中の位置     |
-| holiday | string | 祝日の名称           |
-| item_id | int[]  | その日捨てる種類の配列 |
+| day     | int    | 日付                 |
+| holiday | boolean | 祝日の有無           |
+| item_id | int[]  | その日捨てる種類の配列  |
 
 ```javascript
 [
     {
         
         "day_id": int,
-        "holiday": string,
+        "day": int,
+        "holiday": boolean,
         "item_id":[
             int
         ]
