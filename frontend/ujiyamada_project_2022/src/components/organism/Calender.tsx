@@ -24,6 +24,7 @@ const Calender :React.FC = () => {
             setCalenderData(res.data);
         })
     },[selectArea,selectMonth]);
+    
     return(
         <>
             <Box sx={{my:2,mx:7}}>

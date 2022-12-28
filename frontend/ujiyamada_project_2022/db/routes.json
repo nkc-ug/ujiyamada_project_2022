@@ -2,5 +2,11 @@
     "/api/calender/oominato/12":"/oominato12",
     "/api/calender/oominato/1":"/oominato1",
     "/api/calender/obata/12":"/obata12",
-    "/api/calender/obata/1":"/obata1"
+    "/api/calender/obata/1":"/obata1",
+
+    "/api/divide/null":"/null",
+    "/api/divide":"/divide",
+    "/api/divide/a":"/a",
+    "/api/divide/ai":"/ai",
+    "/api/divide/air":"/air"
 }

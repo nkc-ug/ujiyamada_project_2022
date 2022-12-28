@@ -15,10 +15,10 @@ const CalenderCell:React.FC<CalenderType> = (props) => {
                 {props.holiday ?
                     <Typography textAlign='left' color='red' sx={{pl:0.8}}>{props.day}</Typography>
                     :
-                    props.day_id % 7 == 0 ?
+                    props.day_id % 7 === 0 ?
                         <Typography textAlign='left' color='blue' sx={{pl:0.8}}>{props.day}</Typography>
                         :
-                        props.day_id % 7 == 1 ?
+                        props.day_id % 7 === 1 ?
                             <Typography textAlign='left' color='red' sx={{pl:0.8}}>{props.day}</Typography>    
                             :
                             <Typography textAlign='left' sx={{pl:0.8}}>{props.day}</Typography>
@@ -26,19 +26,19 @@ const CalenderCell:React.FC<CalenderType> = (props) => {
                 {props.item_id.map((item_id) => {
                     switch (item_id){
                         case 1:
-                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='3px' bgcolor='blue' height='10px'></Box>)
+                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='2px' bgcolor='blue' height='10px'></Box>)
                         case 2:
-                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='3px' bgcolor='yellow' height='10px'></Box>)
+                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='2px' bgcolor='yellow' height='10px'></Box>)
                         case 3:
-                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='3px' bgcolor='green' height='10px'></Box>)
+                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='2px' bgcolor='green' height='10px'></Box>)
                         case 4:
-                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='3px' bgcolor='orange' height='10px'></Box>)
+                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='2px' bgcolor='orange' height='10px'></Box>)
                         case 5:
-                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='3px' bgcolor='purple' height='10px'></Box>)
+                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='2px' bgcolor='purple' height='10px'></Box>)
                         case 6:
-                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='3px' bgcolor='red' height='10px'></Box>)
+                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='2px' bgcolor='red' height='10px'></Box>)
                         case 7:
-                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='3px' bgcolor='skyblue' height='10px'></Box>)
+                            return(<Box key={item_id} sx={{my:0.1, mx:0.1}} borderRadius='2px' bgcolor='skyblue' height='10px'></Box>)
                         default:
                             break;
                     }

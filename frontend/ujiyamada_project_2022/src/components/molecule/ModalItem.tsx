@@ -16,7 +16,7 @@ const ModalItem = () => {
     const [selectItem,setSelectItem] = useState<UseStateType>("");
     return(
         <ItemContext.Provider value={{state:selectItem,setState:setSelectItem}}>
-            <ItemAutocomplete list={itemlist} label={'分別検索'}/>
+            <ItemAutocomplete/>
             <Box sx={{ height:400, mt:3, border:'solid 0.5px', borderRadius:3}}>
                 <Typography sx={{p:2}} variant="subtitle1">{selectItem}</Typography>
             </Box>
@@ -26,15 +26,3 @@ const ModalItem = () => {
 
 export default ModalItem;
 
-const itemlist = [
-    "アイロン",
-    'インクカートリッジ',
-     'ウッドタイル',
-      'エアコン',
-     'オイルヒーター',
-     'カメラ',
-     'キャビネット',
-      'クリスマスツリー',
-     'ケーブル',
-     'コサージュ'
-];
