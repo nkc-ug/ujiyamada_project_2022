@@ -20,7 +20,7 @@ const DivideDisplay = () => {
     },[selectItem])
 
     return(
-        <Box sx={{ height:400, mt:3, border:'solid 0.5px', borderRadius:3}}>
+        <Box sx={{ height:400, mt:3, border:'solid 1px', borderRadius:3, borderColor: 'rgba(0,0,0,0.3)'}}>
             <Box sx={{my:2}}>
                 {selectItem === "" || selectItem === null ?
                 <></>
