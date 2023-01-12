@@ -22,7 +22,7 @@ const DivideDisplay = () => {
     return(
         <Box sx={{ height:400, mt:3, border:'solid 0.5px', borderRadius:3}}>
             <Box sx={{my:2}}>
-                {selectItem === "" ?
+                {selectItem === "" || selectItem === null ?
                 <></>
                 :
                 <>
