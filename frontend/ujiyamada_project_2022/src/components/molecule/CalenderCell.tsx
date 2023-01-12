@@ -8,10 +8,12 @@ type CalenderType = {
     item_id:[number]
 };
 
+// border='solid 0.5px rgba(0,0,0,0.4)'
+
 const CalenderCell:React.FC<CalenderType> = (props) => {
     return(
         <>
-            <Box border='solid 0.5px rgba(0,0,0,0.4)' bgcolor='white' height='80px'>
+            <Box bgcolor='white' height='90px' sx={{borderBottom: 0.1, borderRight: 0.1, borderColor: 'rgba(0,0,0,0.6)'}}>
                 {props.holiday ?
                     <Typography textAlign='left' color='red' sx={{pl:0.8}}>{props.day}</Typography>
                     :
