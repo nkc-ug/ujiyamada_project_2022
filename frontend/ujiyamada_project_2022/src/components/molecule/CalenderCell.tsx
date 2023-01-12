@@ -8,8 +8,6 @@ type CalenderType = {
     item_id:[number]
 };
 
-// border='solid 0.5px rgba(0,0,0,0.4)'
-
 const CalenderCell:React.FC<CalenderType> = (props) => {
     return(
         <>
