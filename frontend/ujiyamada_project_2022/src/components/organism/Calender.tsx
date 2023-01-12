@@ -7,6 +7,7 @@ import DatePic from "../molecule/DatePick";
 import { AreaStateContext, MonthStateContext } from "../page/HomePage";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { Stack } from "@mui/system";
+import CalenderItemList from "../molecule/CalenderItemList";
 
 type CalenderType = {
     day_id:number,
@@ -49,9 +50,7 @@ const Calender :React.FC = () => {
                     )
                 })}
             </Grid2>
-            <Box sx={{mx:10}} bgcolor='secondary.main' height='100px'>
-
-            </Box>
+            <CalenderItemList/>
         </>
     )
 }
