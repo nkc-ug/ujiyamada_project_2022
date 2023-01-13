@@ -20,17 +20,19 @@ GET /api/calender/{area_id}/{month}
 
 | param   | type   | description         |
 | ------- | ------ | ------------------- |
-| day_id  | int    | カレンダー中の位置     |
-| holiday | string | 祝日の名称           |
-| item_id | int[]  | その日捨てる種類の配列 |
+| day_location      | int       | カレンダー中の位置                 |
+| date              | int       | 日にち(NULLはカレンダーの余白部分)  |
+| isholiday         | boolean   | 祝日かどうか                      |
+| discardable_id    | int[]     | 捨てられるゴミの種類の配列          |
 
+この形式のデータが35個固定で送信される
 ```javascript
 [
     {
         
-        "day_id": int,
-        "holiday": string,
-        "item_id":[
+        "day_location": int,
+        "isholiday": boolean,
+        "discardable_id":[
             int
         ]
     }
@@ -95,12 +97,12 @@ GET /api/divide/item/{item_name}
 
 | param       | type    | description  |
 | ----------- | ------- | ------------ |
-| divide      | string  | 分類        　|
+| type        | string  | 分類        　|
 | description | string  | 注意点        |
 
 ```javascript
 {
-    "divide": string,
+    "type": string,
     "description": string
 }
 ```
