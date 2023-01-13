@@ -11,43 +11,43 @@ const CalenderItemList:React.FC = () => {
                 switch(item.color){
                     case 1:
                         return(
-                        <Stack direction='row' key={item.color} sx={{m:1}}>
+                        <Stack direction='row' key={item.color} sx={{mx:1,my:0.8}}>
                             <TaskAltIcon sx={{mr:0.8}}/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 2:
                         return(
-                        <Stack direction='row'key={item.color} sx={{m:1}}>
+                        <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
                             <TaskAltIcon sx={{mr:0.8}} />
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 3:
                         return(
-                        <Stack direction='row'key={item.color} sx={{m:1}}>
+                        <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
                             <TaskAltIcon sx={{mr:0.8}} color='success'/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 4: 
                         return(
-                        <Stack direction='row'key={item.color} sx={{m:1}}>
+                        <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
                             <TaskAltIcon sx={{mr:0.8}} color='warning'/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 5:
                         return(
-                        <Stack direction='row'key={item.color} sx={{m:1}}>
+                        <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
                             <TaskAltIcon sx={{mr:0.8}} />
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 6:
                         return(
-                        <Stack direction='row'key={item.color} sx={{m:1}}>
+                        <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
                             <TaskAltIcon sx={{mr:0.8}} color='error'/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 7:
                         return(
-                        <Stack direction='row'key={item.color} sx={{m:1}}>
+                        <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
                             <TaskAltIcon sx={{mr:0.8}} color='info'/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
@@ -55,7 +55,7 @@ const CalenderItemList:React.FC = () => {
                         return(<Box>エラーが発生しました</Box>)
                 }
             })}
-            <Box height='20px' bgcolor='primary'/>
+            <Box height='80px' bgcolor='primary'/>
         </Grid2>
    )
 }
