@@ -6,7 +6,7 @@ import SearchModal from "./SearchModal";
 
 export const Context= createContext(false);
 
-const Body = () => {
+const Body:React.FC = () => {
     return(
         <>
             <Box>

@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
 import axios from "../../util/axiosUtil";
 import TitleAndText from "../atom/TitleAndText";
@@ -9,7 +9,7 @@ type DivideTextType = {
     "description": string
 }
 
-const DivideDisplay = () => {
+const DivideDisplay:React.FC = () => {
     const {state:selectItem,setState:setSelectItem} = useContext(ItemContext)
     const [divideText,setDivideText] = useState<DivideTextType>({divide:"",description:""});
 

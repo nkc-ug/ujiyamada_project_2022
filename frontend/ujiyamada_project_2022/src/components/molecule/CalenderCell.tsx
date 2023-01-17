@@ -13,13 +13,13 @@ const CalenderCell:React.FC<CalenderType> = (props) => {
         <>
             <Box bgcolor='white' height='90px' sx={{borderBottom: 0.1, borderRight: 0.1, borderColor: 'rgba(0,0,0,0.6)'}}>
                 {props.holiday ?
-                    <Typography textAlign='left' color='red' sx={{pl:0.8}}>{props.day}</Typography>
+                    <Typography textAlign='left' color='#ef5350' sx={{pl:0.8}}>{props.day}</Typography>
                     :
                     props.day_id % 7 === 0 ?
-                        <Typography textAlign='left' color='blue' sx={{pl:0.8}}>{props.day}</Typography>
+                        <Typography textAlign='left' color='#5c6bc0' sx={{pl:0.8}}>{props.day}</Typography>
                         :
                         props.day_id % 7 === 1 ?
-                            <Typography textAlign='left' color='red' sx={{pl:0.8}}>{props.day}</Typography>    
+                            <Typography textAlign='left' color='#ef5350' sx={{pl:0.8}}>{props.day}</Typography>    
                             :
                             <Typography textAlign='left' sx={{pl:0.8}}>{props.day}</Typography>
                 }

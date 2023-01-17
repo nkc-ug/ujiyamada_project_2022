@@ -11,7 +11,7 @@ type UseStateType = string | null ;
 
 export const ItemContext = createContext({} as StateContextType)
 
-const ModalItem = () => {
+const ModalItem:React.FC = () => {
     const [selectItem,setSelectItem] = useState<UseStateType>("");
     return(
         <ItemContext.Provider value={{state:selectItem,setState:setSelectItem}}>
