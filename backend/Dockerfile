@@ -1,15 +1,24 @@
 FROM php:8.1.10-apache
 
-RUN apt-get update -y && \
+RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
-    libonig-dev \
-    zip unzip && \
+        libonig-dev \
+        zip \
+        unzip && \
     docker-php-ext-install pdo_mysql mysqli && \
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
     php composer-setup.php && \
     rm composer-setup.php && \
     mv composer.phar /usr/local/bin/composer && \
-    cd /var/www && \
-    composer create-project "laravel/laravel=9.45.*" laratest
+    composer global require laravel/installer && \
+    export PATH=$PATH:/var/www/html/.config/composer/vendor/bin && \
+    mkdir /var/www/html/laravel
+    # laratest　は持ってくるLaravelのプロジェクトで後で変える
+COPY laratest/ /var/www/html/laravel/
+RUN rm  /var/www/html/laravel/composer.lock && \
+    rm -r /var/www/html/laravel/vendor && \
+    cd /var/www/html/laravel && \
+    composer update && \
+    composer install 
     
