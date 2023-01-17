@@ -1,5 +1,5 @@
 import { IconButton, Typography } from "@mui/material";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import { Box, Stack } from "@mui/system";
@@ -14,6 +14,7 @@ const DatePic: React.FC = () => {
     useEffect(() => {
         setSelectYear(Number(moment().format('YYYY')));
         setSelectMonth(Number(moment().format('MM')));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     const addDate = () => {
@@ -41,7 +42,7 @@ const DatePic: React.FC = () => {
             <IconButton onClick={subDate}>
                 <ArrowCircleLeftOutlinedIcon  fontSize="large" />
             </IconButton>
-            <Box sx={{mt:1.3}}>
+            <Box sx={{my:1.5}}>
                 <Typography variant="h5" textAlign='center' sx={{mx:2}}>
                     {selectYear}年{selectMonth}月
                 </Typography>
