@@ -12,43 +12,43 @@ const CalenderItemList:React.FC = () => {
                     case 1:
                         return(
                         <Stack direction='row' key={item.color} sx={{mx:1,my:0.8}}>
-                            <TaskAltIcon sx={{mr:0.8}}/>
+                            <TaskAltIcon sx={{mr:0.8, color:'#5c6bc0'}}/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 2:
                         return(
                         <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
-                            <TaskAltIcon sx={{mr:0.8}} />
+                            <TaskAltIcon sx={{mr:0.8, color:'#DDD05D'}} />
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 3:
                         return(
                         <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
-                            <TaskAltIcon sx={{mr:0.8}} color='success'/>
+                            <TaskAltIcon sx={{mr:0.8, color:'#66bb6a'}}/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 4: 
                         return(
                         <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
-                            <TaskAltIcon sx={{mr:0.8}} color='warning'/>
+                            <TaskAltIcon sx={{mr:0.8, color:'#ffa726'}}/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 5:
                         return(
                         <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
-                            <TaskAltIcon sx={{mr:0.8}} />
+                            <TaskAltIcon sx={{mr:0.8, color:'#ab47bc'}} />
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 6:
                         return(
                         <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
-                            <TaskAltIcon sx={{mr:0.8}} color='error'/>
+                            <TaskAltIcon sx={{mr:0.8, color:'#ef5350'}}/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     case 7:
                         return(
                         <Stack direction='row'key={item.color} sx={{mx:1,my:0.8}}>
-                            <TaskAltIcon sx={{mr:0.8}} color='info'/>
+                            <TaskAltIcon sx={{mr:0.8, color:'#29b6f6'}}/>
                             <Typography>{item.itemName}</Typography>
                         </Stack>)
                     default:
