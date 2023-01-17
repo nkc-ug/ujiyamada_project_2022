@@ -29,7 +29,7 @@ export const MonthStateContext = createContext<MonthStateContextType>({} as Mont
 const HomePage:React.FC = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [modalOpen, setModalOpen] = useState(false);
-    const [selectArea, setSelectArea] = useState<StringStateType>("oominato");
+    const [selectArea, setSelectArea] = useState<StringStateType>("大湊地区");
     const [selectMonth, setSelectMonth] = useState<NumStateType>(Number(moment().format('MM')))
 
     return (

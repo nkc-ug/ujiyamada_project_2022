@@ -1,8 +1,15 @@
 {
     "/api/calender/oominato/12":"/oominato12",
     "/api/calender/oominato/1":"/oominato1",
+    "/api/calender/%E5%A4%A7%E6%B9%8A%E5%9C%B0%E5%8C%BA/1":"/oominato1",
+    "/api/calender/oominato/2":"/oominato12",
+    "/api/calender/%E5%A4%A7%E6%B9%8A%E5%9C%B0%E5%8C%BA/2":"/oominato12",
+
     "/api/calender/obata/12":"/obata12",
     "/api/calender/obata/1":"/obata1",
+    "/api/calender/%E5%B0%8F%E4%BF%A3%E5%9C%B0%E5%8C%BA1/1":"/obata1",
+    "/api/calender/obata/2":"/obata12",
+    "/api/calender/%E5%B0%8F%E4%BF%A3%E5%9C%B0%E5%8C%BA1/2":"/obata12",
 
     "/api/divide/null":"/null",
     "/api/divide":"/divide",

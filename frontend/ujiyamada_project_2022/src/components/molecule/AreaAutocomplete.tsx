@@ -20,10 +20,8 @@ const AreaAutocomplete: React.FC = () => {
 export default AreaAutocomplete;
 
 const arealist = [
-    'oominato',
-    'obata',
-//    '大湊地区',
-//    '小俣地区1',
+   '大湊地区',
+   '小俣地区1',
    '小俣地区2',
    '神社地区',
    '北浜地区',
