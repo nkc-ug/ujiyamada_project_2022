@@ -1,33 +1,40 @@
 import { IconButton, Typography } from "@mui/material";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import { Box, Stack } from "@mui/system";
 import moment from "moment";
-import { MonthStateContext } from "../page/HomePage";
+import { MonthStateContext, YearStateContext } from "../page/HomePage";
 
 const DatePic: React.FC = () => {
-    const [year, setYear] = useState(moment().format('YYYY'));
-    const [month, setMonth] = useState(moment().format('MM'));
-    const [dateCount, setDateCount] = useState(0);
+
+    const {state:selectYear,setState:setSelectYear} = useContext(YearStateContext);
     const {state:selectMonth,setState:setSelectMonth} = useContext(MonthStateContext);
+    
+    useEffect(() => {
+        setSelectYear(Number(moment().format('YYYY')));
+        setSelectMonth(Number(moment().format('MM')));
+    },[])
 
     const addDate = () => {
-        setDateCount(dateCount+1);
-        changeCalendar();
+        if(selectMonth + 1 === 13){
+            setSelectYear(selectYear + 1);
+            setSelectMonth(1);
+        }
+        else{
+            setSelectMonth(selectMonth + 1);
+        }
     }
 
     const subDate = () => {
-        setDateCount(dateCount-1);
-        changeCalendar();
+        if(selectMonth - 1 === 0){
+            setSelectYear(selectYear - 1);
+            setSelectMonth(12);
+        }
+        else{
+            setSelectMonth(selectMonth - 1);
+        }
     }
-
-    const changeCalendar = () => {
-        const timeData = moment();
-        timeData.add(dateCount, 'months');
-        setYear(timeData.format('YYYY'));
-        setSelectMonth(Number(timeData.format('MM')));
-    } 
     
     return(
         <Stack direction='row'>
@@ -36,7 +43,7 @@ const DatePic: React.FC = () => {
             </IconButton>
             <Box sx={{mt:1.3}}>
                 <Typography variant="h5" textAlign='center' sx={{mx:2}}>
-                    {year}年{selectMonth}月
+                    {selectYear}年{selectMonth}月
                 </Typography>
             </Box>
             <IconButton  onClick={addDate}>
