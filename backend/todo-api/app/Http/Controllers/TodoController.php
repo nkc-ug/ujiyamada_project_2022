@@ -15,13 +15,13 @@ class TodoController extends Controller
      */
     public function divide($item_name)
     {
-       $items = DB::table('items')->where('name', 'like', '%'.$item_name.'%')->get();
+       $items = DB::table('items')->select('name')->where('name', 'like', $item_name.'%')->get();
         return json_encode($items, JSON_UNESCAPED_UNICODE);
 
     }
     public function getItem($item_name)
     {
-        $items = DB::table('items')->where('name', '=', $item_name)->get();
+        $items = DB::table('items')->select('type','description')->where('name', '=', $item_name)->get();
         return json_encode($items, JSON_UNESCAPED_UNICODE);
 
     }
