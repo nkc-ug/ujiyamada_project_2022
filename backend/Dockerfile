@@ -15,7 +15,7 @@ RUN apt-get update && \
     export PATH=$PATH:/var/www/html/.config/composer/vendor/bin && \
     mkdir /var/www/html/laravel
     # todo-api は持ってくるLaravelのプロジェクト
-COPY laratest/ /var/www/html/laravel/
+COPY todo-api/ /var/www/html/laravel/
 RUN rm  /var/www/html/laravel/composer.lock && \
     rm -r /var/www/html/laravel/vendor && \
     cd /var/www/html/laravel && \
