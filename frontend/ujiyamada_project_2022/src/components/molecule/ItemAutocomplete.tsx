@@ -12,6 +12,7 @@ const ItemAutocomplete: React.FC = () => {
     useEffect(()=>{
         axios.get(`api/divide/${inputText}`).then((res:any) =>{
             setItemList([...res.data]);
+            console.log(res);
         })
     },[])
 
