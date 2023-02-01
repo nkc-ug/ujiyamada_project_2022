@@ -10,6 +10,8 @@ const DatePic: React.FC = () => {
 
     const {state:selectYear,setState:setSelectYear} = useContext(YearStateContext);
     const {state:selectMonth,setState:setSelectMonth} = useContext(MonthStateContext);
+    const nowYear = Number(moment().format('YYYY'));
+    const nowMonth = Number(moment().format('MM'));
     
     useEffect(() => {
         setSelectYear(Number(moment().format('YYYY')));
@@ -23,7 +25,9 @@ const DatePic: React.FC = () => {
             setSelectMonth(1);
         }
         else{
-            setSelectMonth(selectMonth + 1);
+            if(selectMonth+1 != 4){
+                setSelectMonth(selectMonth + 1);
+            }
         }
     }
 
@@ -33,7 +37,9 @@ const DatePic: React.FC = () => {
             setSelectMonth(12);
         }
         else{
-            setSelectMonth(selectMonth - 1);
+            if(selectMonth-1 != 3){
+                setSelectMonth(selectMonth - 1);
+            }
         }
     }
     
