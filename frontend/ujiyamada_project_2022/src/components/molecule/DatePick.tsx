@@ -1,13 +1,14 @@
-import { IconButton, Typography } from "@mui/material";
-import { useContext, useEffect } from "react";
+import { Alert, Container, IconButton, Modal, Typography } from "@mui/material";
+import { useContext, useEffect, useState } from "react";
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import { Box, Stack } from "@mui/system";
 import moment from "moment";
 import { MonthStateContext, YearStateContext } from "../page/HomePage";
+import { ModalStyle } from "../style/ModalStyle";
 
 const DatePic: React.FC = () => {
-
+    const [ErrorModalOpen, setErrorModalOpen] = useState<boolean>(false);
     const {state:selectYear,setState:setSelectYear} = useContext(YearStateContext);
     const {state:selectMonth,setState:setSelectMonth} = useContext(MonthStateContext);
     const nowYear = Number(moment().format('YYYY'));
@@ -28,6 +29,9 @@ const DatePic: React.FC = () => {
             if(selectMonth+1 != 4){
                 setSelectMonth(selectMonth + 1);
             }
+            else{
+                setErrorModalOpen(true);
+            }
         }
     }
 
@@ -39,6 +43,9 @@ const DatePic: React.FC = () => {
         else{
             if(selectMonth-1 != 3){
                 setSelectMonth(selectMonth - 1);
+            }
+            else{
+                setErrorModalOpen(true);
             }
         }
     }
@@ -56,6 +63,15 @@ const DatePic: React.FC = () => {
             <IconButton  onClick={addDate}>
                 <ArrowCircleRightOutlinedIcon fontSize="large"/>
             </IconButton>
+            <Modal open={ErrorModalOpen} onClose={() => {setErrorModalOpen(!ErrorModalOpen)}}>
+                <Container maxWidth='xs' sx={{...ModalStyle}}>
+                    <Stack sx={{ mx:8 }}>
+                        <Typography textAlign='center' noWrap={true} >
+                            まだデータが<br/>存在しない月です。
+                        </Typography>
+                    </Stack>
+                </Container>
+            </Modal>
         </Stack>
     )
 }
