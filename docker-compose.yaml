@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   frontend:
-    build: ./frontend/Dockerfile
+    build: ./frontend
     container_name: "nodejs"
 #    volumes:
 #     - "./frontend/ujiyamada_project_2022/public:/var/www/html"
@@ -12,7 +12,7 @@ services:
       - apache
 
   backend:
-    build: ./backend/Dockerfile
+    build: ./backend
     container_name: "apache"
     volumes:
       - "./html/:/var/www/html"
@@ -23,15 +23,14 @@ services:
       - mysql
 
   mysql:
-    image: mysql:8
+    build: ./db
     volumes:
-      - ./mysql:/var/lib/mysql
-      - ./config/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./mysql_init:/docker-entrypoint-initdb.d
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=test_db
+      - MYSQL_DATABASE=main_db
       - MYSQL_USER=test_user
-      - MYSQL_PASSWORD=test_password
+      - MYSQL_PASSWORD=test_pass
     ports:
       - "4306:3306"
     container_name: mysql8-1
