@@ -15,15 +15,17 @@ type CalenderType = {
     item_id:[number]
 };
 
-const Calender :React.FC = () => {
+const Calender:React.FC = () => {
     const {state:selectArea} = useContext(AreaStateContext);
     const {state:selectMonth} = useContext(MonthStateContext);
     const [calenderData, setCalenderData] = useState([]);
 
     useEffect(() => {
-        axios.get(`/api/calender/${selectArea}/${selectMonth}`).then((res:any) =>{
+        const getCalenderData = async () => {
+            const res = await axios.get(`/api/calender/${selectArea}/${selectMonth}`)
             setCalenderData(res.data);
-        })
+        } 
+        getCalenderData();
     },[selectArea,selectMonth]);
     
     return(

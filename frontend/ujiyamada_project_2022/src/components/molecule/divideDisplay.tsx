@@ -10,13 +10,15 @@ type DivideTextType = {
 }
 
 const DivideDisplay:React.FC = () => {
-    const {state:selectItem,setState:setSelectItem} = useContext(ItemContext)
+    const {state:selectItem} = useContext(ItemContext)
     const [divideText,setDivideText] = useState<DivideTextType>({divide:"",description:""});
 
     useEffect(() => {
-        axios.get(`api/divide/item/${selectItem}`).then((res:any) => {
+        const DivideData = async () => {
+            const res = await axios.get(`api/divide/item/${selectItem}`)
             setDivideText(res.data);
-        })
+        }
+        DivideData();
     },[selectItem])
 
     return(

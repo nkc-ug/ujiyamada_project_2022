@@ -1,0 +1,4 @@
+SELECT * FROM AS
+(
+    SELECT * FROM 
+)

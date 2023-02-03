@@ -8,11 +8,13 @@ const ItemAutocomplete: React.FC = () => {
     const [itemList, setItemList] = useState<string[]>([]);
     const [inputText, setInputText] = useState<string>("");
 
-    // 2回目以降のstateへの配列のセットが行えないため一旦空配列
-    useEffect(()=>{
-        axios.get(`api/divide/${inputText}`).then((res:any) =>{
-            setItemList([...res.data]);
-        })
+    // resを仮で準備できないため空配列
+    useEffect(() => {
+        const GetDivideData = async () => {
+            const res = await axios.get(`api/divide/${inputText}`);
+            setItemList(res.data);
+        }
+        GetDivideData();
     },[])
 
     return(
