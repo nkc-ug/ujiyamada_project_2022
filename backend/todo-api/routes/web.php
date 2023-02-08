@@ -18,7 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/app/todo/index', [App\Http\Controllers\TodoController::class, 'index']);
-//Route::get('/api/calender', [App\Http\Controllers\TodoController::class, 'calander']);
 Route::get('/api/divide/{item_name}', [App\Http\Controllers\TodoController::class, 'divide']);
 Route::get('/api/divide/item/{item_name}', [App\Http\Controllers\TodoController::class, 'getItem']);
