@@ -1,6 +1,7 @@
 CREATE TABLE separations (
     id int(2) AUTO_INCREMENT,
     name varchar(20),
+    color varchar(20),
     PRIMARY KEY(id)
 );
 
