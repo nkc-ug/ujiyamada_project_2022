@@ -33,7 +33,7 @@ CREATE TABLE areas (
     plastic_day int(3),
     PRIMARY KEY(id),
     FOREIGN KEY(id)
-    REFERENCES separations(area_id)
+    REFERENCES monthly_days(area_id)
 );
 
 CREATE TABLE synonyms (
