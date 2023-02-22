@@ -7,7 +7,7 @@ CREATE TABLE separations (
 
 CREATE TABLE monthly_days (
     area_id int(3) AUTO_INCREMENT,
-    month int(2) AUTO_INCREMENT,
+    month int(2),
     separation_id int(2),
     collection_day int(2),
     PRIMARY KEY(area_id, month),
