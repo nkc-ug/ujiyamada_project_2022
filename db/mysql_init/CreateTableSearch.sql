@@ -1,3 +1,5 @@
-SELECT name FROM synonyms
+CREATE VIEW search AS
+SELECT name, kind_id FROM synonyms
 UNION
-SELECT name FROM kinds;
+SELECT name, id FROM kinds
+ORDER BY 1;
