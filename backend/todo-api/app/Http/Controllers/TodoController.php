@@ -13,17 +13,27 @@ class TodoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function calander($area_id, $month){
+        $items = DB::table('monthly_days')
+        ->join('separations', 'monthly_days.separation_id', '=', 'separations.id')
+        ->select('monthly_days.separation_id', 'monthly_days.collection_day')
+        ->where('monthly_days.month', $month)
+        ->where('monthly_days.area_id', $area_id)
+        ->get();
+
+
+    }
+
     public function divide($item_name)
     {
-       $items = DB::table('kinds')->select('name')->where('name', 'like', $item_name.'%')->get();
-       $array = $items->pluck('name')->toArray();
-       $result = json_encode($array,JSON_UNESCAPED_UNICODE);
-       return $result;
-
+        $items = DB::table('items')->select('name')->where('name', 'like', $item_name.'%')->get();
+        $array = $items->pluck('name')->toArray();
+        $result = json_encode($array,JSON_UNESCAPED_UNICODE);
+        return $result;
     }
     public function getItem($item_name)
     {
-        $items = DB::table('kinds','separations')->select('separations.name','kinds.description')->where('kinds.name', '=', $item_name)->get();
+        $items = DB::table('items')->select('type','description')->where('name', '=', $item_name)->get();
         return json_encode($items, JSON_UNESCAPED_UNICODE);
 
     }
