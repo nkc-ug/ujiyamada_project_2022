@@ -5,16 +5,6 @@ CREATE TABLE separations (
     PRIMARY KEY(id)
 );
 
-CREATE TABLE kinds (
-    id int(3) AUTO_INCREMENT,
-    name varchar(20),
-    separation_id int(2),
-    point varchar(100),
-    PRIMARY KEY(id),
-    FOREIGN KEY(separation_id)
-    REFERENCES separations(id)
-);
-
 CREATE TABLE monthly_days (
     area_id int(3) AUTO_INCREMENT,
     month int(2) AUTO_INCREMENT,
@@ -34,6 +24,16 @@ CREATE TABLE areas (
     PRIMARY KEY(id),
     FOREIGN KEY(id)
     REFERENCES monthly_days(area_id)
+);
+
+CREATE TABLE kinds (
+    id int(3) AUTO_INCREMENT,
+    name varchar(20),
+    separation_id int(2),
+    point varchar(100),
+    PRIMARY KEY(id),
+    FOREIGN KEY(separation_id)
+    REFERENCES separations(id)
 );
 
 CREATE TABLE synonyms (
