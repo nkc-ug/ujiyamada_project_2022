@@ -67,10 +67,40 @@ VALUES
 
 INSERT INTO monthly_days (area_id,month,separation_id,collection_day)
 VALUES
-    (0,1,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),5),
-    (0,1,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),19),
-    (0,1,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),19),
-    (0,1,(SELECT separations_id FROM separations WHERE name ='ガラス、くずびん類、陶磁器類'),26);
+    (0,4,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),5),
+    (0,4,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),19),
+    (0,4,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),19),
+    (0,4,(SELECT separations_id FROM separations WHERE name ='ガラス、くずびん類、陶磁器類'),26),
+    (1,4,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),11),
+    (1,4,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),11),
+    (2,4,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),6),
+    (2,4,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),6),
+    (3,4,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),4),
+    (4,4,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),13),
+    (4,4,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),13),
+    (5,4,(SELECT separations_id FROM separations WHERE name ='ガラス、くずびん類、陶磁器類'),5),
+    (6,4,(SELECT separations_id FROM separations WHERE name ='ガラス、くずびん類、陶磁器類'),7),
+    (7,4,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),6),
+    (8,4,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),12),
+    (9,4,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),6),
+    (10,4,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),7),
+    (11,4,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),7),
+    (11,4,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),7),
+    (12,4,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),14),
+    (12,4,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),14),
+    (13,4,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),4),
+    (13,4,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),4),
+    (14,4,(SELECT separations_id FROM separations WHERE name ='ガラス、くずびん類、陶磁器類'),4),
+    (15,4,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),5),
+    (15,4,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),5),
+    (16,4,(SELECT separations_id FROM separations WHERE name ='布類、段ボール類'),11),
+    (16,4,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),11),
+    (17,4,(SELECT separations_id FROM separations WHERE name ='ガラス、くずびん類、陶磁器類'),4),
+    (18,4,(SELECT separations_id FROM separations WHERE name ='資源びん'),11),
+    (19,4,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),4),
+    (20,4,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),5),
+    (21,4,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),5),
+    ;
 
 INSERT INTO areas (name,burnable_day_01,burnable_day_02,plastic_day)
 VALUES
