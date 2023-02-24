@@ -67,11 +67,11 @@ VALUES
 
 INSERT INTO monthly_days (area_id,month,separation_id,collection_day)
 VALUES
-    (0,1,(SELECT separations_id FROM separations WHERE name =缶・金属類),3),
-    (0,1,(SELECT separations_id FROM separations WHERE name =缶・金属類),3);
+    (0,1,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),3),
+    (0,1,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),3);
 
 INSERT INTO areas (name,burnable_day_01,burnable_day_02,plastic_day)
-VALUESpukl
+VALUES
     ('進修',1,4,5),
     ('有緝',3,5,4),
     ('厚生',1,4,2),
