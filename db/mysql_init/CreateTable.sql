@@ -67,8 +67,10 @@ VALUES
 
 INSERT INTO monthly_days (area_id,month,separation_id,collection_day)
 VALUES
-    (0,1,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),3),
-    (0,1,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),3);
+    (0,1,(SELECT separations_id FROM separations WHERE name ='缶・金属類'),5),
+    (0,1,(SELECT separations_id FROM separations WHERE name ='ペットボトル'),19),
+    (0,1,(SELECT separations_id FROM separations WHERE name ='紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),19),
+    (0,1,(SELECT separations_id FROM separations WHERE name ='ガラス、くずびん類、陶磁器類'),26);
 
 INSERT INTO areas (name,burnable_day_01,burnable_day_02,plastic_day)
 VALUES
