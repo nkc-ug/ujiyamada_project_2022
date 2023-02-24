@@ -20,4 +20,4 @@ Route::get('/', function () {
 
 Route::get('/api/divide/{item_name}', [App\Http\Controllers\TodoController::class, 'divide']);
 Route::get('/api/divide/item/{item_name}', [App\Http\Controllers\TodoController::class, 'getItem']);
-Route::get('/api/calender/{area_name}/{month}', [App\Http\Controllers\TodoController::class, 'calander']);
+Route::get('/api/calender/{area_name}/{year}/{month}', [App\Http\Controllers\TodoController::class, 'calander']);
