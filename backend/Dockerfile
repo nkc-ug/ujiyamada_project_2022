@@ -18,4 +18,5 @@ COPY ./todo-api .
 
 RUN composer update && \
     composer install && \
+    composer require azuyalabs/yasumi && \
     cp .env.example .env

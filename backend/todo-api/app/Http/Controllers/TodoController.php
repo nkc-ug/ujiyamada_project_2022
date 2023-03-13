@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Todo;
 use Illuminate\Support\Facades\DB;
+use Yasumi\Yasumi;
 
 class TodoController extends Controller
 {
@@ -14,7 +15,6 @@ class TodoController extends Controller
  * @property int|null $date
  * @property bool $isholiday
  * @property int[] $discardable_id
- * @return \Illuminate\Http\Response
  */
      public function calander($area_id,$year,$month){
         $monthly_table = DB::table('monthly_days')
@@ -40,11 +40,17 @@ class TodoController extends Controller
         $lastday = date('t', strtotime($year."/".$month."/01"));
         $firstday_week = date('w', strtotime( $year.'-'.$month.'-01'));
 
-        $json_array = array_fill( 1 , $lastday , $daily_form );
+        $array_qty = ($lastday/7 +1)*7;
+        $json_array = [];
+        $holidays = Yasumi::create('Japan', $year, 'ja_JP');
 
-        for( $day_count = 1 ; $day_count <= $lastday ; $day_count++ ) {
-            $json_array[$day_count]['day_location'] = $day_count + $firstday_week;
-            $json_array[$day_count]['date'] = $day_count;
+        for( $day_count = 1 ; $day_count <= $array_qty ; $day_count++ ) {
+            $daily_data = $daily_form;
+            $daily_data['day_location'] = $day_count;
+            if( $day_count < $firstday_week || $lastday < $day_count) continue;
+            else $daily_data['date'] = $day_count-$firstday_week;
+            // 休日判定
+            $daily_data['isholiday'] = $holidays->isHoliday( (string) $year."-".(string) $month."-".(string) $day_count);
 
             if( $day_count%7 == $weekly_array[1] or $day_count%7 == $weekly_array[2] ) {
                 $burn_id = DB::table('separations')
@@ -52,24 +58,25 @@ class TodoController extends Controller
                 ->where('name','燃えるごみ')
                 ->get();
                 //6は燃えるゴミのseparartions_id
-                $json_array[$day_count]['discardable_id']->push($burn_id);
+                array_push($daily_data['discardable_id'],$burn_id);
             }
-            else if( $day_count%7 == $weekly_array[3] ){
+            if( $day_count%7 == $weekly_array[3] ){
                 $plastic_id = DB::table('separations')
                 ->select('id')
                 ->where('name','プラスチック製容器包装')
                 ->get();
                 //4はプラスチックのseparartions_id
-                $json_array[$day_count]['discardable_id']->push($plastic_id);
+                array_push($daily_data['discardable_id'],$plastic_id);
             }
             //collection_day列を参照して該当する日にちデータにseparartions_idを追加
             $separation_count = 1;
             foreach( $monthly_table as $separational_data ) {
                 if( $separational_data[2] == $day_count ) {
-                    $json_array[$day_count]['discardable_id']->push($separation_count);
+                    array_push($json_array[$day_count]['discardable_id'],$separation_count);
                 }
                 $separation_count++;
             }
+            array_push($json_array,$daily_data);
         }
         return json_encode($json_array, JSON_UNESCAPED_UNICODE);
     }
@@ -134,3 +141,4 @@ class TodoController extends Controller
         //
     }
 }
+?>
