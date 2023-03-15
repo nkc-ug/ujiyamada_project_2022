@@ -8,6 +8,8 @@ services:
     privileged: true
     ports:
       - "4000:4001"
+    networks:
+      - ujiyamada_project_2022_default
     depends_on:
       - apache
 
@@ -19,11 +21,14 @@ services:
     privileged: true
     ports:
       - "80:80"
+    networks:
+      - ujiyamada_project_2022_default
     depends_on:
       - mysql
 
   mysql:
     build: ./db
+    container_name: db-container
     volumes:
       - .db/mysql_init:/docker-entrypoint-initdb.d
     environment:
@@ -33,4 +38,5 @@ services:
       - MYSQL_PASSWORD=test_pass
     ports:
       - "4306:3306"
-    container_name: mysql8-1
+    networks:
+      - ujiyamada_project_2022_default

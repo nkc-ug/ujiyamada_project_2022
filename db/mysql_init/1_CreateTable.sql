@@ -74,3 +74,9 @@ VALUES
     ( NULL, 'ダンボール類'),
     ( NULL, 'てんぷら油、または燃えるごみ'),
     ( NULL, 'その他');
+
+CREATE USER 'referer'@'localhost' IDENTIFIED BY 'referer_pass';
+
+GRANT SELECT ON main_db.* TO referer@localhost;
+
+FLUSH PRIVILEGES;
