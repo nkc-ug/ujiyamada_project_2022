@@ -1,24 +1,22 @@
-FROM php:8.1.10-apache
+FROM php:8.1.10
 
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
-        libonig-dev \
         zip \
         unzip && \
-    docker-php-ext-install pdo_mysql mysqli && \
-    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
-    php composer-setup.php && \
-    rm composer-setup.php && \
-    mv composer.phar /usr/local/bin/composer && \
-    composer global require laravel/installer && \
-    export PATH=$PATH:/var/www/html/.config/composer/vendor/bin && \
-    mkdir /var/www/html/laravel
-    # laratest　は持ってくるLaravelのプロジェクトで後で変える
-COPY laratest/ /var/www/html/laravel/
-RUN rm  /var/www/html/laravel/composer.lock && \
-    rm -r /var/www/html/laravel/vendor && \
-    cd /var/www/html/laravel && \
-    composer update && \
-    composer install 
-    
+    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&\
+    php -r "if ( hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" &&\
+    php composer-setup.php &&\
+    php -r "unlink('composer-setup.php');" &&\
+    mv composer.phar /usr/local/bin/composer &&\
+    mkdir /var/www/html/todo-api
+
+WORKDIR /var/www/html/todo-api
+
+COPY ./todo-api .
+
+RUN composer update && \
+    composer install && \
+    composer require azuyalabs/yasumi && \
+    cp .env.example .env
