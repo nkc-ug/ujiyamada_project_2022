@@ -1,0 +1,30 @@
+version: '3.7'
+services:
+
+  backend:
+    build: ./
+    container_name: "php-container"
+    volumes:
+      - "./html/:/var/www/html"
+    privileged: true
+    ports:
+      - "80:80"
+    network:
+      - backend_default
+    depends_on:
+      - mysql
+      
+  mysql:
+    build: ./db/
+    container_name: db-container
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=main_db
+      - MYSQL_USER=test_user
+      - MYSQL_PASSWORD=test_pass
+    volumes:
+      - ./db/mysql_init:/docker-entrypoint-initdb.d
+    ports:
+      - "4306:3306"
+    networks:
+      - backend_default
