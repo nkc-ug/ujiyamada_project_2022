@@ -1,6 +1,0 @@
-deb http://ftp.jp.debian.org/debian/ stretch-updates main contrib
-deb http://ftp.jp.debian.org/debian/ streach-backports main contrib  non-free
- 
-#deb-src http://ftp.jp.debian.org/debian/ stretch main contrib non-free
-#deb-src http://ftp.jp.debian.org/debian/ stretch-updates main contrib non-free
-#deb-src http://ftp.jp.debian.org/debian/ stretch-backports main contrib non-free

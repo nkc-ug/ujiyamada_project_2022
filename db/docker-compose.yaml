@@ -2,6 +2,7 @@ version: '3.7'
 services:
   mysql:
     build: ./
+    container_name: db-container
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=main_db
@@ -11,4 +12,12 @@ services:
       - ./mysql_init:/docker-entrypoint-initdb.d
     ports:
       - "4306:3306"
-    container_name: mysql8-1
+    networks:
+      - db_default
+
+  ubuntu:
+    build: ./ubuntu/
+    container_name: ubuntu-container
+    networks:
+      - db_default
+    tty: true
