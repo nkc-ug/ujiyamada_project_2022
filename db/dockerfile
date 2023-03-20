@@ -2,7 +2,6 @@ FROM mysql:8.0-debian
 
 COPY my.cnf/my.conf /etc/mysql/conf.d/my.cnf
 
-COPY my.cnf/sources.list /etc/mysql/conf.d/my.cnf
 
 # 日本語環境を追加
 RUN apt-get update && apt-get install -y locales \

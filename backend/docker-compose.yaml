@@ -3,20 +3,17 @@ services:
 
   backend:
     build: ./
-    container_name: "php-container"
-    volumes:
-      - "./html/:/var/www/html"
+    container_name: php-container
     privileged: true
     ports:
-      - "80:80"
-    network:
-      - backend_default
+      - "8080:80"
     depends_on:
       - mysql
+    tty: true
       
   mysql:
     build: ./db/
-    container_name: db-container
+    container_name: mysql-container
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=main_db
@@ -25,6 +22,7 @@ services:
     volumes:
       - ./db/mysql_init:/docker-entrypoint-initdb.d
     ports:
-      - "4306:3306"
-    networks:
-      - backend_default
+      - "3306:3306"
+
+    restart: always
+    
