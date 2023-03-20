@@ -40,8 +40,8 @@ CREATE TABLE kinds (
 );
 
 CREATE TABLE synonyms (
-    id int(4),
-    kind_id int(3) AUTO_INCREMENT,
+    id int(4) AUTO_INCREMENT,
+    kind_id int(3),
     `name` varchar(20),
     PRIMARY KEY(id),
     FOREIGN KEY(kind_id)
