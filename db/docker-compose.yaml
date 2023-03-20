@@ -12,12 +12,8 @@ services:
       - ./mysql_init:/docker-entrypoint-initdb.d
     ports:
       - "4306:3306"
-    networks:
-      - db_default
 
   ubuntu:
     build: ./ubuntu/
     container_name: ubuntu-container
-    networks:
-      - db_default
     tty: true

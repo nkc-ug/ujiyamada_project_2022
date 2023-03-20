@@ -1,7 +1,7 @@
 USE main_db;
 
 INSERT INTO kinds (`name`,separation_id,`point`) VALUES
-('CD・DVD・MD等',(SELECT id FROM separations WHERE `name` = '﻿燃えるごみ'),'ケースも燃えるごみです。DVD、MD、BD（ブルーレイディスク）も燃えるごみです。'),
+('CD・DVD・MD等',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),'ケースも燃えるごみです。DVD、MD、BD（ブルーレイディスク）も燃えるごみです。'),
 ('ＨＤＤ',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'ごみで出す場合は缶・金属類ですが、個人情報等の重要なデータは完全に消去してから出すことをおすすめします。'),
 ('ＳＤカード',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'ごみで出す場合は缶・金属類ですが、個人情報等の重要なデータは完全に消去してから出すことをおすすめします。'),
 ('ＳＳＤ',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'ごみで出す場合は缶・金属類ですが、個人情報等の重要なデータは完全に消去してから出すことをおすすめします。'),
