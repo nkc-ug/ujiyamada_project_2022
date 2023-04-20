@@ -59,8 +59,7 @@ INSERT INTO kinds (`name`,separation_id,`point`) VALUES
 ('カミソリ',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'空き缶等の小さな金属容器に入れるか、刃先をアルミホイルでくるんで安全な形で出してください。'),
 ('カメラ',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'データは消去し、電池は取り外して出してください。https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1001446.html'),
 ('ガラス',(SELECT id FROM separations WHERE `name` = 'ガラス・くずびん類、陶磁器類'),'長辺が60㎝以上あるものや、ガラス戸は粗大ごみです。ガラス以外が混ざったもの（ガラスの鍋のふたなど）やクリスタル製品は、「缶・金属類」に出してください。'),
-"('ガラス・くずびん類、陶磁器類',(SELECT id FROM separations WHERE `name` = 'ガラス・くずびん類、陶磁器類'),'ガラス・くずびん類は、ガラスのみでできているものです。割れた資源びんも出すことができます。ガラス以外が混ざったもの（ガラスの鍋のふたなど）やクリスタル製品は、「缶・金属類」に出してください。
-陶磁器類は、陶磁器のみでできているものです。瓦や使用済みのタイルはガレキ類のため、陶磁器類には出せません。未使用のタイルは陶磁器類で出すことができます。'),"
+('ガラス・くずびん類、陶磁器類',(SELECT id FROM separations WHERE `name` = 'ガラス・くずびん類、陶磁器類'),'ガラス・くずびん類は、ガラスのみでできているものです。割れた資源びんも出すことができます。ガラス以外が混ざったもの（ガラスの鍋のふたなど）やクリスタル製品は、「缶・金属類」に出してください。陶磁器類は、陶磁器のみでできているものです。瓦や使用済みのタイルはガレキ類のため、陶磁器類には出せません。未使用のタイルは陶磁器類で出すことができます。'),
 ('ガレキ',(SELECT id FROM separations WHERE `name` = 'ガレキ類'),'コンクリート、瓦、レンガ、タイル、スレートなどがガレキ類となります。廃棄物投棄場へ持ち込んでください。★事業者は持ち込めません！（月・火曜→伊勢廃棄物投棄場[朝熊町2891-5]　水曜→小俣廃棄物投棄場[小俣町新村92-1] いずれも9：00-12：00　13：00-16：30）　https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1005987.html'),
 ('キーボード',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'マウスなどのPC周辺機器も缶・金属類です。'),
 ('ギター',(SELECT id FROM separations WHERE `name` = '粗大ごみ'),''),
@@ -293,8 +292,7 @@ INSERT INTO kinds (`name`,separation_id,`point`) VALUES
 ('ラップの芯',(SELECT id FROM separations WHERE `name` = '紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),''),
 ('ラティス',(SELECT id FROM separations WHERE `name` = '粗大ごみ'),'長辺60cm未満のものは燃えるごみです。'),
 ('ランドセル',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),''),
-"('ランプ',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'長辺60㎝以上は粗大ごみです。燃料や電池は抜いてから出してください。
-https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1001446.html'),"
+('ランプ',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'長辺60㎝以上は粗大ごみです。燃料や電池は抜いてから出してください。https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1001446.html'),
 ('リール（釣具）',(SELECT id FROM separations WHERE `name` = '缶・金属類'),''),
 ('リコーダー',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),''),
 ('リモコン',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'乾電池は取り外してから出してください。https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1001446.html'),
@@ -415,8 +413,7 @@ https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1001446.html'),"
 ('裁断くず',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),''),
 ('財布',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),''),
 ('作業服',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),''),
-"('雑がみ',(SELECT id FROM separations WHERE `name` = '紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),'雑がみとは、新聞・折込チラシ、飲料用紙パック、雑誌以外の紙類のことで、お菓子の空き箱や封筒、はがき、トイレットペーパーの紙芯などがあります。紙袋に集めて、「紙類」の日に出すことができます。詳しくはこちらをご覧ください。
-https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1001442.html'),"
+('雑がみ',(SELECT id FROM separations WHERE `name` = '紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),'雑がみとは、新聞・折込チラシ、飲料用紙パック、雑誌以外の紙類のことで、お菓子の空き箱や封筒、はがき、トイレットペーパーの紙芯などがあります。紙袋に集めて、「紙類」の日に出すことができます。詳しくはこちらをご覧ください。https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1001442.html'),
 ('雑誌',(SELECT id FROM separations WHERE `name` = '紙類(新聞・折込チラシ、飲料用紙パック、雑誌・雑がみ類)'),'片手で持てる重さにまとめ、ひもで十文字に縛って出してください。'),
 ('皿（ガラス、陶磁器製）',(SELECT id FROM separations WHERE `name` = 'ガラス・くずびん類、陶磁器類'),''),
 ('皿（プラスチック製）',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),''),
@@ -475,7 +472,7 @@ https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1001442.html'),"
 ('針',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'空き缶等の小さな金属容器に入れるか、アルミホイルでくるんで安全な形で出してください。'),
 ('人形',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),''),
 ('人工芝',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),''),
-"('刃物類		',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'刃先はアルミホイルでくるみ、安全な形で出してください。'),"
+('刃物類',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'刃先はアルミホイルでくるみ、安全な形で出してください。'),
 ('水槽（ガラス＋アクリル製）',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'長辺60㎝以上は粗大ごみです。'),
 ('水槽（ガラスのみ）',(SELECT id FROM separations WHERE `name` = 'ガラス・くずびん類、陶磁器類'),'長辺60㎝以上は粗大ごみです。'),
 ('水槽（プラスチック製）',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),'長辺60㎝以上は粗大ごみです。'),
@@ -567,9 +564,7 @@ https://www.city.ise.mie.jp/kurashi/gomi/dashikata/1001442.html'),"
 ('鍋（金属・ホーロー製）',(SELECT id FROM separations WHERE `name` = '缶・金属類'),''),
 ('鍋のふた',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'ふたの一部にガラスが入っているものも缶・金属類です。'),
 ('入れ歯',(SELECT id FROM separations WHERE `name` = '缶・金属類'),'なるべく、市役所福祉総務課（東館2階）、伊勢市健康福祉センター・小俣保健センター・二見老人センター・ハートプラザみそのに設置のリサイクルボックスへ出してください。'),
-"('燃えるごみ',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),'燃えるごみとは、生ごみ、綿入り製品、日用品（プラスチック・皮製の商品、使い捨てライターなど）、剪定枝、草、その他（CD、ビデオテープ、乾燥剤、紙おむつ、ストーマなど）です。指定ごみ袋に入れて、決められた曜日に、決められた集積所に出してください。
-★注意★
-生ごみはよく水切りしてください。剪定枝は長さ60cm未満、太さ10㎝以下に切り束ね、片手で持てる程度にして紐で縛って出してください。草はよく乾かしてから、指定ごみ袋に入れて出してください。紙おむつは中身の汚物を捨ててから出してください。'),"
+('燃えるごみ',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),'燃えるごみとは、生ごみ、綿入り製品、日用品（プラスチック・皮製の商品、使い捨てライターなど）、剪定枝、草、その他（CD、ビデオテープ、乾燥剤、紙おむつ、ストーマなど）です。指定ごみ袋に入れて、決められた曜日に、決められた集積所に出してください。★注意★生ごみはよく水切りしてください。剪定枝は長さ60cm未満、太さ10㎝以下に切り束ね、片手で持てる程度にして紐で縛って出してください。草はよく乾かしてから、指定ごみ袋に入れて出してください。紙おむつは中身の汚物を捨ててから出してください。'),
 ('粘土（油・紙）',(SELECT id FROM separations WHERE `name` = '燃えるごみ'),''),
 ('農機具（エンジン付）',(SELECT id FROM separations WHERE `name` = 'その他'),'市では回収できません。販売店等にお問い合わせください。'),
 ('農薬',(SELECT id FROM separations WHERE `name` = 'その他'),'市では回収できません。販売店等にお問い合わせください。'),
@@ -699,9 +694,7 @@ INSERT INTO synonyms (kind_id,`name`) VALUES
 ((SELECT id FROM kinds WHERE `name` = 'ＳＳＤ'),'Ssd'),
 ((SELECT id FROM kinds WHERE `name` = 'ＳＳＤ'),'ssd'),
 ((SELECT id FROM kinds WHERE `name` = 'Tシャツ'),'てぃーしゃつ'),
-((SELECT id FROM kinds WHERE `name` = 'Tシャツ'),'ティーシャツ')
-
-;
+((SELECT id FROM kinds WHERE `name` = 'Tシャツ'),'ティーシャツ');
 
 INSERT INTO areas (`name`,burnable_day_01,burnable_day_02,plastic_day) VALUES
 ('進修',1,4,5),
