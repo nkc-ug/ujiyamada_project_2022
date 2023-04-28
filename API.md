@@ -7,12 +7,13 @@
 
 ### Req
 ```
-GET /api/calender/{area_name}/{month}
+GET /api/calender/{area_id}/{year}/{month/year}
 ```
 
 | param   | type    | description    |
 | ------- | ------- | -------------- |
-| area_name | string  | 表示する地名     |
+| area_id | int  | 表示する地域ID     |
+|year     | int   | 表示すること年    |
 | month   | int or null     | 表示する月　　   |
 
 ### Res
