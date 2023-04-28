@@ -13,7 +13,7 @@ CREATE TABLE monthly_days (
     `month` int(2),
     separation_id int(2),
     collection_day int(2),
-    PRIMARY KEY(area_id, `month`),
+    PRIMARY KEY(area_id,`month`,separation_id),
     FOREIGN KEY(separation_id)
     REFERENCES separations(id)
 );
@@ -24,9 +24,7 @@ CREATE TABLE areas (
     burnable_day_01 int(3),
     burnable_day_02 int(3),
     plastic_day int(3),
-    PRIMARY KEY(id),
-    FOREIGN KEY(id)
-    REFERENCES monthly_days(area_id)
+    PRIMARY KEY(id)
 );
 
 CREATE TABLE kinds (
@@ -40,8 +38,8 @@ CREATE TABLE kinds (
 );
 
 CREATE TABLE synonyms (
-    id int(4),
-    kind_id int(3) AUTO_INCREMENT,
+    id int(4) AUTO_INCREMENT,
+    kind_id int(3),
     `name` varchar(20),
     PRIMARY KEY(id),
     FOREIGN KEY(kind_id)
