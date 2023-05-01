@@ -1,4 +1,13 @@
 # ujiyamada_project_2022
+
+## ドキュメント
+
+- [API ドキュメント](./doc/API.md)
+- [item_id と item_name の対応表](./doc/item.md)
+- [E-R 図](./doc/ERD.png)
+
+<br/>
+
 <h2>Githubのルールについて</h2>
   <h3>コメントの書き方</h3>
   <ul>
