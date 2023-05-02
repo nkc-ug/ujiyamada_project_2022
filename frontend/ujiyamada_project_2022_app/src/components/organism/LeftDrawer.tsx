@@ -6,7 +6,7 @@ import ImportContactsIcon from "@mui/icons-material/ImportContacts";
 import CommentIcon from "@mui/icons-material/Comment";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
 import AddToHomeScreenOutlinedIcon from "@mui/icons-material/AddToHomeScreenOutlined";
-import { DrawerContext, ModalContext } from "../context/contextProvider";
+import { DrawerContext, ModalContext } from "../../context/context";
 
 export const LeftDrawer: FC = () => {
   const { state: drawerOpen, setState: setDrawerOpen } = useContext(DrawerContext);

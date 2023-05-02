@@ -2,8 +2,8 @@ import { Box } from "@mui/material";
 import { FC, useContext, useEffect, useState } from "react";
 import axios from "../../util/axiosUtil";
 import { TitleAndText } from "../atom/TitleAndText";
-import { ItemContext } from "../context/contextProvider";
 import { DivideTextType } from "../../types/DivideTextType";
+import { ItemContext } from "../../context/context";
 
 export const DivideDisplay: FC = () => {
   const { state: selectItem } = useContext(ItemContext);

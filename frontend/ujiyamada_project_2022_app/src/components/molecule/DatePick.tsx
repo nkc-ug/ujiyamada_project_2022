@@ -5,7 +5,7 @@ import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOu
 import { Box, Stack } from "@mui/system";
 import moment from "moment";
 import { ModalStyle } from "../style/ModalStyle";
-import { MonthStateContext, YearStateContext } from "../context/contextProvider";
+import { YearStateContext, MonthStateContext } from "../../context/context";
 
 export const DatePic: FC = () => {
   const [ErrorModalOpen, setErrorModalOpen] = useState<boolean>(false);

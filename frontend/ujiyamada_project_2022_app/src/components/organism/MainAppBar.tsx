@@ -2,7 +2,7 @@ import { AppBar, IconButton, Toolbar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { FC, useContext } from "react";
 import { AreaAutocomplete } from "../molecule/AreaAutocomplete";
-import { DrawerContext } from "../context/contextProvider";
+import { DrawerContext } from "../../context/context";
 
 export const MainAppBar: FC = () => {
   const { state: drawerOpen, setState: setDrawerOpen } = useContext(DrawerContext);

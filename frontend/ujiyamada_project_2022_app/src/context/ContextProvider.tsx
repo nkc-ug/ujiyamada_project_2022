@@ -1,37 +1,18 @@
-import { FC, createContext, useState } from "react";
-
-type StateContextType = {
-  state: boolean;
-  setState: React.Dispatch<React.SetStateAction<boolean>>;
-};
-
-type AreaStateContextType = {
-  state: string | null;
-  setState: React.Dispatch<React.SetStateAction<string | null>>;
-};
-
-type DayStateContextType = {
-  state: number;
-  setState: React.Dispatch<React.SetStateAction<number>>;
-};
-
-type ItemStateContextType = {
-  state: string | null;
-  setState: React.Dispatch<React.SetStateAction<string | null>>;
-};
-
-type StringStateType = string | null;
-
-export const DrawerContext = createContext<StateContextType>({} as StateContextType);
-export const ModalContext = createContext<StateContextType>({} as StateContextType);
-export const AreaStateContext = createContext<AreaStateContextType>({} as AreaStateContextType);
-export const YearStateContext = createContext<DayStateContextType>({} as DayStateContextType);
-export const MonthStateContext = createContext<DayStateContextType>({} as DayStateContextType);
-export const ItemContext = createContext({} as ItemStateContextType);
+import { FC, useState } from "react";
+import {
+  ModalContext,
+  DrawerContext,
+  AreaStateContext,
+  YearStateContext,
+  MonthStateContext,
+  ItemContext
+} from "./context";
 
 type Props = {
   children: React.ReactNode;
 };
+
+type StringStateType = string | null;
 
 export const ContextProvider: FC<Props> = ({ children }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);

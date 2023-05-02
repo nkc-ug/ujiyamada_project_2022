@@ -1,7 +1,7 @@
 import { Autocomplete, TextField } from "@mui/material";
 import { FC, useContext, useEffect, useState } from "react";
 import axios from "../../util/axiosUtil";
-import { ItemContext } from "../context/contextProvider";
+import { ItemContext } from "../../context/context";
 
 export const ItemAutocomplete: FC = () => {
   const { state: selectItem, setState: setSelectItem } = useContext(ItemContext);

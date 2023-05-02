@@ -1,6 +1,6 @@
 import { Autocomplete, TextField } from "@mui/material";
 import { FC, useContext } from "react";
-import { AreaStateContext } from "../context/contextProvider";
+import { AreaStateContext } from "../../context/context";
 
 export const AreaAutocomplete: FC = () => {
   const { state: selectArea, setState: setSelectArea } = useContext(AreaStateContext);
